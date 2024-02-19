@@ -1,3 +1,7 @@
+# st-jonwin
+
+My st config.
+
 st - simple terminal
 --------------------
 st is a simple terminal emulator for X which sucks less.
