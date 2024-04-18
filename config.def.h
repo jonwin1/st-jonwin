@@ -4,7 +4,7 @@
  * appearance
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:pixelsize=16:antialias=true:autohint=true";
+static char *font = "FiraCode Nerd Font:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 0;
 
 /*
@@ -72,7 +72,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "st";
 
 /*
  * spaces per tab
@@ -92,41 +92,46 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8, alphaUnfocused = 0.6;
+float alpha = 0.85, alphaUnfocused = 0.7;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    "#1d2021",
-    "#ea6962", /* red     */
-    "#a9b665", /* green   */
-    "#d8a657", /* yellow  */
-    "#7daea3", /* blue    */
-    "#d3869b", /* magenta */
-    "#89b482", /* cyan    */
-    "#d4be98", /* white   */
+    "#3b4252", /* black   */
+    "#bf616a", /* red     */
+    "#a3be8c", /* green   */
+    "#ebcb8b", /* yellow  */
+    "#81a1c1", /* blue    */
+    "#b48ead", /* magenta */
+    "#88c0d0", /* cyan    */
+    "#e5e9f0", /* white   */
     
     /* 8 bright colors */
-    "#928374", /* black   */
-    "#ef938e", /* red     */
-    "#bbc585", /* green   */
-    "#e1bb7e", /* yellow  */
-    "#9dc2ba", /* blue    */
-    "#e1acbb", /* magenta */
-    "#a7c7a2", /* cyan    */
-    "#e2d3ba", /* white   */
-};
+    "#4c566a", /* black   */
+    "#bf616a", /* red     */
+    "#a3be8c", /* green   */
+    "#ebcb8b", /* yellow  */
+    "#81a1c1", /* blue    */
+    "#b48ead", /* magenta */
+    "#8fbcbb", /* cyan    */
+    "#eceff4", /* white   */
 
+    [255] = 0,
+ 
+    /* more colors can be added after 255 to use with DefaultXX */
+    "#d8dee9", /* default foreground colour */
+    "#2e3440", /* default background colour */
+};
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 15;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 15;
-static unsigned int defaultrcs = 0;
-unsigned int bg = 0, bgUnfocused = 0;
+unsigned int defaultfg = 256;
+unsigned int defaultbg = 257;
+unsigned int defaultcs = 256;
+static unsigned int defaultrcs = 257;
+unsigned int bg = 257, bgUnfocused = 257;
 
 /*
  * Default shape of cursor
