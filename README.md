@@ -2,22 +2,32 @@
 
 My st configuration with flake.nix
 
-<img src="./img.png" alt="Image of st terminal">
-
-## st - simple terminal
-
 st is a simple terminal emulator for X which sucks less.
 
+<img src="./img.png" alt="Image of st terminal">
 
-## Requirements
+## Table of contents
+
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+    - [On most distros](#on-most-distros)
+    - [NixOS](#nixos)
+        - [Test](#test)
+        - [Install](#install)
+- [Installed patches](#installed-patches)
+
+## Dependencies
 
 - Xlib header files.
 - FiraCode Nerd Font
+- harfbuzz
+
+**Note:** On NixOS dependencies are automatically installed. (Not the font)
 
 
 ## Installation
 
-### Most distros
+### On most distros
 
 Edit config.mk to match your local setup (st is installed into
 the /usr/local namespace by default).
@@ -50,13 +60,13 @@ Then add this to your configuration.nix to install st:
 
     environment = {
         systemPackages = with pkgs; [
-            inputs.st.packages."x86_64-linux".default
+            inputs.st.packages."${system}".default
         ];
     };
 
 ## Installed patches
 
-- none
+- TODO
 
 ## Credits
 
