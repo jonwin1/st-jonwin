@@ -15,6 +15,7 @@ st is a simple terminal emulator for X which sucks less.
         - [Test](#test)
         - [Install](#install)
 - [Installed patches](#installed-patches)
+- [Keybindings](#keybindings)
 
 ## Dependencies
 
@@ -67,6 +68,13 @@ Then add this to your configuration.nix to install st:
 ## Installed patches
 
 - TODO
+
+## Keybindings
+
+- `alt + shift + k`: Zoom in
+- `alt + shift + j`: Zoom out
+- `alt + c`: Copy
+- `alt + v`: Paste
 
 ## Credits
 
