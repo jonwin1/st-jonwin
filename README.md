@@ -67,14 +67,25 @@ Then add this to your configuration.nix to install st:
 
 ## Installed patches
 
-- TODO
+- [Srollback](https://st.suckless.org/patches/scrollback/)
+    - st-scrollback-20210507-4536f46
+    - st-scrollback-reflow-20230607-211964d
+    - st-scrollback-mouse-20220127-2c5edf2
+    - st-scrollback-mouse-altscreen-20220127-2c5edf2
 
 ## Keybindings
 
-- `alt + shift + k`: Zoom in
-- `alt + shift + j`: Zoom out
 - `alt + c`: Copy
 - `alt + v`: Paste
+- `alt + k`: Scroll up
+- `alt + j`: Scroll down
+- `mousewheel up`: Scroll up
+- `mousewheel down`: Scroll down
+- `alt + u`: Scroll up page
+- `alt + d`: Scroll down page
+- `alt + shift + k`: Zoom in
+- `alt + shift + j`: Zoom out
+- `alt + shift + l`: Zoom reset
 
 ## Credits
 
