@@ -72,6 +72,8 @@ Then add this to your configuration.nix to install st:
     - st-scrollback-reflow-20230607-211964d
     - st-scrollback-mouse-20220127-2c5edf2
     - st-scrollback-mouse-altscreen-20220127-2c5edf2
+- [Boxdraw](https://st.suckless.org/patches/boxdraw/)
+    - st-boxdraw-v2-0.8.5
 
 ## Keybindings
 
