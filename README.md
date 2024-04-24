@@ -84,6 +84,8 @@ Then add this to your configuration.nix to install st:
 - [Visual bell 2](https://st.suckless.org/patches/visualbell2/)
     - st-visualbell2-basic-2020-05-13-045a0fa
     - st-visualbell2-enhanced-2020-05-13-045a0fa
+- [Newterm](https://st.suckless.org/patches/newterm/)
+    - st-newterm-0.9
 
 ## Keybindings
 
