@@ -86,6 +86,8 @@ Then add this to your configuration.nix to install st:
     - st-visualbell2-enhanced-2020-05-13-045a0fa
 - [Newterm](https://st.suckless.org/patches/newterm/)
     - st-newterm-0.9
+- [Copyurl](https://st.suckless.org/patches/copyurl/)
+    - st-copyurl-multiline-20230406-211964d
 
 ## Keybindings
 
@@ -93,13 +95,15 @@ Then add this to your configuration.nix to install st:
 - `alt + v`: Paste
 - `alt + k`: Scroll up
 - `alt + j`: Scroll down
-- `mousewheel up`: Scroll up
-- `mousewheel down`: Scroll down
 - `alt + u`: Scroll up page
 - `alt + d`: Scroll down page
 - `alt + shift + k`: Zoom in
 - `alt + shift + j`: Zoom out
-- `alt + shift + l`: Zoom reset
+- `alt + shift + h`: Zoom reset
+- `alt + l`: Copy url above
+- `alt + shift + l`: Copy url below
+
+Mouse wheel scrolling is also added.
 
 ## Credits
 
