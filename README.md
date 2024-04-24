@@ -74,6 +74,10 @@ Then add this to your configuration.nix to install st:
     - st-scrollback-mouse-altscreen-20220127-2c5edf2
 - [Boxdraw](https://st.suckless.org/patches/boxdraw/)
     - st-boxdraw-v2-0.8.5
+- [Alpha](https://st.suckless.org/patches/alpha/)
+    - st-alpha-20220206-0.8.5
+- [Alpha Focus Highlight](https://st.suckless.org/patches/alpha_focus_highlight/)
+    - st-focus-20200731-patch_alpha
 
 ## Keybindings
 
