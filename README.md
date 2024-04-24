@@ -88,6 +88,8 @@ Then add this to your configuration.nix to install st:
     - st-newterm-0.9
 - [Copyurl](https://st.suckless.org/patches/copyurl/)
     - st-copyurl-multiline-20230406-211964d
+- [Open copied url](https://st.suckless.org/patches/open_copied_url/)
+    - st-openclipboard-20220217-0.8.5
 
 ## Keybindings
 
@@ -102,6 +104,7 @@ Then add this to your configuration.nix to install st:
 - `alt + shift + h`: Zoom reset
 - `alt + l`: Copy url above
 - `alt + shift + l`: Copy url below
+- `alt + o`: Open url in clipboard in default browser
 
 Mouse wheel scrolling is also added.
 
