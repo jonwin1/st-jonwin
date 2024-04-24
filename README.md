@@ -78,6 +78,9 @@ Then add this to your configuration.nix to install st:
     - st-alpha-20220206-0.8.5
 - [Alpha Focus Highlight](https://st.suckless.org/patches/alpha_focus_highlight/)
     - st-focus-20200731-patch_alpha
+- [Ligatures](https://st.suckless.org/patches/ligatures/)
+    - A combination of st-ligatures-alpha-scrollback-0.9
+    and st-ligatures-boxdraw-0.9, see [st-ligatures-boxdraw-alpha-scrollback-2024-04-24-0.9.diff](./patches/st-ligatures-boxdraw-alpha-scrollback-2024-04-24-0.9.diff)
 
 ## Keybindings
 
