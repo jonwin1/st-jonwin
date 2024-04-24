@@ -81,6 +81,9 @@ Then add this to your configuration.nix to install st:
 - [Ligatures](https://st.suckless.org/patches/ligatures/)
     - A combination of st-ligatures-alpha-scrollback-0.9
     and st-ligatures-boxdraw-0.9, see [st-ligatures-boxdraw-alpha-scrollback-2024-04-24-0.9.diff](./patches/st-ligatures-boxdraw-alpha-scrollback-2024-04-24-0.9.diff)
+- [Visual bell 2](https://st.suckless.org/patches/visualbell2/)
+    - st-visualbell2-basic-2020-05-13-045a0fa
+    - st-visualbell2-enhanced-2020-05-13-045a0fa
 
 ## Keybindings
 
