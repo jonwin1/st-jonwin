@@ -125,7 +125,7 @@ char *termname = "st";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.9, alphaUnfocused = 0.8;
+float alpha = 1, alphaUnfocused = 1;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
