@@ -6,7 +6,7 @@
     utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, utils }:
+  outputs = { nixpkgs, utils, ... }:
     utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {
         inherit system;
@@ -15,22 +15,15 @@
           (final: prev: {
             st = prev.st.overrideAttrs (old: {
               src = ./.;
-              buildInputs = with prev; old.buildInputs ++ [harfbuzz];
+              buildInputs = with prev; old.buildInputs ++ [
+                harfbuzz 
+                fira-code-nerdfont
+              ];
             });
           })
         ];
       };
     in {
       packages.default = pkgs.st;
-
-      devShell = pkgs.mkShell {
-        buildInputs = with pkgs; [
-          gnumake
-          xorg.libX11
-          xorg.libXft
-          xorg.libXinerama
-          harfbuzz
-        ];
-      };
     });
 }
